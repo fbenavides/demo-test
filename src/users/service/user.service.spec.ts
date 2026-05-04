@@ -33,7 +33,7 @@ describe('UserService', () => {
 
     expect(result).toEqual({
       id: 1,
-      name: 'Fernandos',
+      name: 'Fernando',
       email: 'fernando@test.com',
       password: '123456',
     });
