@@ -8,6 +8,8 @@ export class UserService {
   async create(data: CreateUserInput): Promise<User> {
     const existingUser = await this.userDao.findOneByEmail(data.email);
 
+    console.log('hola');
+    
     if (existingUser) {
       throw new Error('Email already exists');
     }
